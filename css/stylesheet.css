@@ -12,7 +12,7 @@ body {
 .navbar-brand img{
   max-width: 150px;
 }
-.color-blue{
+.navbar-nav .nav-item .color-blue{
   color: #007cc3 !important;
 }
 ul.navbar-nav li.searchbar a{
@@ -31,4 +31,28 @@ ul.navbar-nav li.searchbar i{
 }
 .getintouch{
   margin-left: 100px;
+}
+.getintouch a, .searchbar a{
+  border-bottom: none !important;
+}
+.navbar-nav .nav-item .font-size-14{
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+.navbar-nav .nav-item .nav-link:link{
+  text-decoration: none;
+}
+.navbar-nav .nav-item:not(.searchbar) .nav-link{
+  border: solid 3px transparent;
+}
+.navbar-nav .nav-item .nav-link:hover{
+
+  border-bottom: solid 3px #fe4902;
+  /* width: 88px;
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  background: #fe4902;
+  overflow: hidden; */
 }
