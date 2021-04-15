@@ -87,3 +87,28 @@ ul.navbar-nav li.searchbar i{
   font-size: 13px;
   font-weight: 400;
 }
+.play-button{
+  background: #fe4902;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.font-color-black{
+  color: #000;
+}
+.bannerr-carousell .owl-dots{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.bannerr-carousell .owl-dots .owl-dot.active span{
+  background: #f47721 !important;
+}
+.bannerr-carousell .owl-dots .owl-dot span{
+  width: 20px;
+  height: 5px;
+  background: #d9e0ec;
+}
