@@ -179,9 +179,9 @@ ul.navbar-nav li.searchbar i {
   border-bottom: 3px solid #e4e6e7;
 }
 
-.tabs-wraper {
+/* .tabs-wraper {
   max-width: 25%;
-}
+} */
 .border-box{
   box-shadow: 0px 0px 19px 6px #ebebeb;
 }
@@ -261,4 +261,26 @@ ul.navbar-nav li.searchbar i {
 }
 .nav-tabs{
   border: none;
+}
+.orange-underline{
+  border-bottom: solid 5px #fe4902;
+  width: 83px;
+}
+.digital-para{
+  color: #687e85;
+  text-align: left
+}
+@media (max-width: 768px) {
+  .text-on-image{
+    padding-top: 16px
+  }
+  .h1-style {
+    font-size: 21px;
+  }
+  .check-button{
+    text-align: center;
+  }
+  .bannerr-carousell .owl-dots{
+    left: 37%;
+  }
 }
