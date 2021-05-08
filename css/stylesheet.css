@@ -634,6 +634,43 @@ ul.navbar-nav li.searchbar i {
 .social-icons{
   padding-top: 90px;
 }
+.bar-block{
+  width: 105px;
+  height: 300px;
+  background: green;
+  /* overflow: hidden; */
+  transition: all 1s ease-in-out;
+}
+.bar{
+  width: 100px;
+  height: 100%;
+  float: left;
+}
+.bar h3{
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: white;
+  font-weight: bold;
+  margin: 0px;
+}
+.detail-box{
+  float: left;
+  width: 5px;
+  overflow: hidden;
+  height: 100%;
+  opacity: 0;
+  background: lightyellow;
+  transition: all 1s ease-in-out;
+}
+.bar-block:hover{
+  width: 800px;
+  transition: all 1s ease-in-out;
+}
+.bar-block:hover .detail-box{
+  width: 700px;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
 
 @media (max-width: 768px) {
   .text-on-image {
