@@ -566,7 +566,9 @@ ul.navbar-nav li.searchbar i {
   font-size: 20px;
   padding-top: 9px;
 }
-
+.contact-btn a:hover{
+  background: #000;
+}
 .team-image {
   border: none;
   text-align: center;
@@ -701,14 +703,19 @@ ul.navbar-nav li.searchbar i {
   top: 0;
   z-index: -1;
 }
-
+/* 
 .banking-box {
   padding: 10px;
-}
+} */
 
 .column1 i {
   color: #fe4902;
   font-size: 35px;
+}
+.service-main-img{
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px lightgrey;
+  border: none;
 }
 
 .column1 a {
