@@ -512,7 +512,17 @@ ul.navbar-nav li.searchbar i {
 }
 
 .heading-banner {
+  background: url(../images/product-top-banner.jpg) no-repeat;
+  height: 18vw;
+}
+
+.about-banner {
   background: url(../images/about-banner.webp) no-repeat;
+  height: 18vw;
+}
+
+.product-banner {
+  background: url(../images/services-innerbanner.jpg) no-repeat;
   height: 18vw;
 }
 
@@ -566,9 +576,11 @@ ul.navbar-nav li.searchbar i {
   font-size: 20px;
   padding-top: 9px;
 }
-.contact-btn a:hover{
+
+.contact-btn a:hover {
   background: #000;
 }
+
 .team-image {
   border: none;
   text-align: center;
@@ -703,6 +715,7 @@ ul.navbar-nav li.searchbar i {
   top: 0;
   z-index: -1;
 }
+
 /* 
 .banking-box {
   padding: 10px;
@@ -712,7 +725,8 @@ ul.navbar-nav li.searchbar i {
   color: #fe4902;
   font-size: 35px;
 }
-.service-main-img{
+
+.service-main-img {
   border-radius: 8px;
   box-shadow: 0px 0px 2px lightgrey;
   border: none;
@@ -769,12 +783,81 @@ ul.navbar-nav li.searchbar i {
   font-weight: 600;
   text-transform: capitalize;
 }
-.services-icon-image img{
+
+.services-icon-image img {
   color: #fe4902;
   text-align: center;
 }
-.banking-box ul li{
+
+.banking-box ul li {
   list-style-type: square;
+}
+
+.product-grid-box img{
+  border-radius: 50%;
+  border: 12px solid #fff;
+}
+
+.product-grid-box:hover:after {
+  border-right: 25px solid #f9580e;
+  border-bottom: 25px solid #f9580e;
+}
+.product-grid-box:after {
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border-right: 25px solid var(--bg-color);
+    border-left: 25px solid transparent;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid var(--bg-color);
+    bottom: 20px;
+    right: 20px;
+    z-index: -1;
+    transition: all 0.2s ease-out 0s;
+}
+.title-head a{
+  text-decoration: none;
+  color: #000;
+}
+
+.product-grid-box:hover:before {
+  background-color: #fe4902;
+}
+.product-grid-box:hover {
+  transition: 0.3s;
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+
+.product-grid-box:before {
+  position: absolute;
+  content: "";
+  top: -20px;
+  left: -26px;
+  width: 185px;
+  height: 185px;
+  background-color: #ffd2bd;
+  border-radius: 0 50%;
+  z-index: -1;
+  transition: all 0.2s ease-out 0s;
+}
+
+.product-grid-box {
+  padding: 50px 35px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 3%);
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: all 0.3s ease-out 0s;
+}
+.font-size-20{
+  font-size: 20px;
+  line-height: 30px;
+}
+.margin-top{
+  margin-top: 48px !important;
 }
 
 @media (max-width: 768px) {
