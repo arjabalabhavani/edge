@@ -20,7 +20,7 @@ $(document).ready(function () {
         margin: 0,
         nav: false,
         dots: true,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive: {

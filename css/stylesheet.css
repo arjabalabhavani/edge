@@ -67,6 +67,11 @@ ul.navbar-nav li.searchbar i {
   overflow: hidden; */
 }
 
+.menu-section .navbar-collapse .nav-item a[aria-selected="true"] {
+  border-bottom: solid 3px #fe4902;
+  padding-bottom: 2px;
+}
+
 .item img {
   max-width: 100% !important;
 }
@@ -514,16 +519,39 @@ ul.navbar-nav li.searchbar i {
 .heading-banner {
   background: url(../images/product-top-banner.jpg) no-repeat;
   height: 18vw;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
 }
 
 .about-banner {
   background: url(../images/about-banner.webp) no-repeat;
   height: 18vw;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.product-banner:before, .about-banner:before, .heading-banner:before {
+  content: " ";
+  background: rgb(0, 0, 0, 0.40);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .product-banner {
   background: url(../images/services-innerbanner.jpg) no-repeat;
   height: 18vw;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  z-index: 1;
 }
 
 .heading-banner-2 {
@@ -793,7 +821,7 @@ ul.navbar-nav li.searchbar i {
   list-style-type: square;
 }
 
-.product-grid-box img{
+.product-grid-box img {
   border-radius: 50%;
   border: 12px solid #fff;
 }
@@ -802,21 +830,23 @@ ul.navbar-nav li.searchbar i {
   border-right: 25px solid #f9580e;
   border-bottom: 25px solid #f9580e;
 }
+
 .product-grid-box:after {
-    position: absolute;
-    content: "";
-    height: 0;
-    width: 0;
-    border-right: 25px solid var(--bg-color);
-    border-left: 25px solid transparent;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid var(--bg-color);
-    bottom: 20px;
-    right: 20px;
-    z-index: -1;
-    transition: all 0.2s ease-out 0s;
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border-right: 25px solid var(--bg-color);
+  border-left: 25px solid transparent;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid var(--bg-color);
+  bottom: 20px;
+  right: 20px;
+  z-index: -1;
+  transition: all 0.2s ease-out 0s;
 }
-.title-head a{
+
+.title-head a {
   text-decoration: none;
   color: #000;
 }
@@ -824,6 +854,7 @@ ul.navbar-nav li.searchbar i {
 .product-grid-box:hover:before {
   background-color: #fe4902;
 }
+
 .product-grid-box:hover {
   transition: 0.3s;
   box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
@@ -852,12 +883,134 @@ ul.navbar-nav li.searchbar i {
   overflow: hidden;
   transition: all 0.3s ease-out 0s;
 }
-.font-size-20{
+
+.font-size-20 {
   font-size: 20px;
   line-height: 30px;
 }
-.margin-top{
+
+.margin-top {
   margin-top: 48px !important;
+}
+
+.product-text-holder i {
+  color: #fe4902;
+  font-size: 40px;
+  text-align: center;
+}
+
+.product-text-holder h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.bg-blue {
+  background: #005387;
+}
+
+.input-box label {
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+  margin-right: 0;
+  padding-right: 0;
+  line-height: normal;
+  line-height: 22px;
+}
+
+.input-box {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.place-box .input-group-sp .form-group-field {
+  display: table-cell;
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+  border: 1px solid #ccc;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.select-style {
+  width: 253px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.control-field, .form-select {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.select-2 {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.select-2-container, .select-2 {
+  width: 100% !important;
+}
+
+.select-2-container {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.place-box {
+  display: table;
+  position: relative;
+  width: 100%;
+}
+
+.calculator:before {
+  content: " ";
+  background: rgb(0, 0, 0, 0.55);
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.calculator {
+  background-size: cover;
+  background: url(../images/cal.jpg) no-repeat top;
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+.input-group-sp {
+  display: table-cell;
+}
+
+.input-group-sp {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.cal-text-holder h4 {
+  font-size: 30px;
 }
 
 @media (max-width: 768px) {
