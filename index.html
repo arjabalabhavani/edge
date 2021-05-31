@@ -19,9 +19,9 @@
 </head>
 
 <body>
-    <header class="menu-section">
+    <header class="menu-section sticky-top">
         <div class="container-fluid p-0">
-            <nav class="navbar py-0 navbar-expand-lg bg-light navbar-light sticky-top">
+            <nav class="navbar py-0 navbar-expand-lg bg-light navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="images/edgeverve_logo.png" class="img-fluid" alt="">
                 </a>
@@ -49,11 +49,15 @@
                             <a class="nav-link font-size-14" href="contact.html">Contact Us</a>
                         </li>
                         <!-- <li class="magic-line ml-3"></li> -->
-
-                        <li class="nav-item getintouch m-0">
+                        <div class="text-center nav-item getintouch m-0">
+                            <a href="" class="nav-item getintouch m-0 nav-link color-blue text-underline"
+                                data-toggle="modal" data-target="#modalContactForm">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i> Get in touch</a>
+                        </div>
+                        <!-- <li class="nav-item getintouch m-0">
                             <a class="nav-link color-blue text-underline" href="#"><i class="fa fa-paper-plane"
                                     aria-hidden="true"></i> Get in touch</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item searchbar pl-3">
                             <a class="nav-link" href="#">
                                 <i class="fa fa-search color-blue" aria-hidden="true"></i>
@@ -97,7 +101,8 @@
                                 class="col-lg-9 button-div pl-3 mr-0 pr-0 color-white d-lg-flex flex-lg-row flex-lg-wrap justify-content-start align-items-start">
                                 <a href="#" class="btn btn-primary bg-dark-light px-4 font-sm-8 font-md-16">Check it out
                                     <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                                <div class="col-lg-3 play-button-holder py-md-2 p-md-0 pl-3 pl-lg-3 pt-lg-0 font-color-black">
+                                <div
+                                    class="col-lg-3 play-button-holder py-md-2 p-md-0 pl-3 pl-lg-3 pt-lg-0 font-color-black">
                                     <a href="https://youtu.be/mEquLNr_2_M"
                                         class="play-button color-white mr-2 d-inline-flex flex-wrap flex-row justify-content-center align-items-center"><i
                                             class="fa fa-play" aria-hidden="true"></i></a>Play video
@@ -950,8 +955,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div
-                        class="footer-item-one border-bottom d-flex flex-row flex-wrap justify-content-between">
+                    <div class="footer-item-one border-bottom d-flex flex-row flex-wrap justify-content-between">
                         <div class="col-md-6 mr-md-0 pr-md-0 logo-img">
                             <img src="images/edge-logo.PNG" alt="" class="img-fluid">
                         </div>
@@ -1028,7 +1032,66 @@
             </div>
         </div>
     </footer>
-        
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-black-3 w-100">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title font-size-20 w-100 color-white font-weight-bold">Write to us</h4>
+                    <button type="button" class="close color-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-3 col-lg-12 d-flex flex-row flex-wrap p-0 align-items-center">
+                        <div class="col-1 p-0 text-center">
+                            <i class="fa fa-user font-size-20 orange-color prefix grey-text"></i>
+                        </div>
+                        <div class="col-11 text-center p-0">
+                            <input type="text" id="form34" class="form-control validate" placeholder="Your name">
+                        </div>
+                        <!-- <label data-error="wrong" data-success="right" for="form34">Your name</label> -->
+                    </div>
+
+                    <div class="md-form mb-4 col-lg-12 d-flex flex-row flex-wrap p-0 align-items-center">
+                        <div class="col-1 p-0 text-center">
+                            <i class="fa fa-envelope font-size-20 orange-color prefix grey-text"></i>
+                        </div>
+                        <div class="col-11 text-center p-0">
+                            <input type="email" id="form29" class="form-control validate" placeholder="Your email">
+                        </div>
+                        <!-- <label data-error="wrong" data-success="right" for="form29">Your email</label> -->
+                    </div>
+
+                    <div class="md-form mb-4 col-lg-12 d-flex flex-row flex-wrap p-0 align-items-center">
+                        <div class="col-1 p-0 text-center">
+                            <i class="fa fa-tag font-size-20 orange-color prefix grey-text"></i>
+                        </div>
+                        <div class="col-11 text-center p-0">
+                            <input type="text" id="form32" class="form-control validate" placeholder="Subject">
+                        </div>
+                        <!-- <label data-error="wrong" data-success="right" for="form32">Subject</label> -->
+                    </div>
+
+                    <div class="md-form col-lg-12 d-flex flex-row flex-wrap p-0">
+                        <div class="col-1 p-0 text-center">
+                            <i class="fa fa-pencil font-size-20 orange-color prefix grey-text"></i>
+                        </div>
+                        <div class="col-11 text-center p-0">
+                            <textarea type="text" id="form8" class="md-textarea form-control" rows="4"
+                                placeholder="Your message"></textarea>
+                        </div>
+                        <!-- <label data-error="wrong" data-success="right" for="form8">Your message</label> -->
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique font-size-20 color-white">Send <i class="fa fa-paper-plane-o orange-color ml-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
