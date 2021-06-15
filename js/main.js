@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
     $('.bannerr-carousell').owlCarousel({
         loop: true,
         margin: 10,
@@ -34,8 +34,9 @@ $(document).ready(function () {
                 items: 2
             }
         }
-    })
+    });
+    $('.mobile-nav-container').hide()
+    $('.navbar-toggler').click(function() {
+        $('.mobile-nav-container').fadeToggle(1000);
+    });
 });
-
-
-
