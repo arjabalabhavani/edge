@@ -19,9 +19,9 @@
 </head>
 
 <body>
-    <header class="menu-section sticky-top">
+    <header class="menu-section sticky-top ">
         <div class="container-fluid p-0">
-            <nav class="navbar py-0 navbar-expand-lg bg-light navbar-light">
+            <nav class="navbar py-3 navbar-expand-lg bg-light navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="images/edgeverve_logo.png" class="img-fluid" alt="">
                 </a>
@@ -41,10 +41,25 @@
                                     class="fa fa-caret-down"></i></a>
                             <div class="sub-menu-1 px-3 py-2">
                                 <ul>
-                                    <li><a href="#">services-1</a></li>
+                                    <li class="sub-hover-me"><a href="#">services-1</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="sub-menu-2 px-3 py-2">
+                                            <button class="back-btn">
+                                                <i class="fa fa-arrow-left text-white"></i>
+                                            </button>
+                                            <ul>
+                                                <li><a href="#">services-2-1</a></li>
+                                                <li><a href="#">services-2-1</a></li>
+                                                <li><a href="#">services-2-1</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
                                     <li class="sub-hover-me"><a href="#">services-2</a><i class="fa fa-angle-right" aria-hidden="true"></i>
                                         <div class="sub-menu-2 px-3 py-2">
+
                                             <ul>
+                                                <button class="back-btn">
+                                                    <i class="fa fa-arrow-left text-white"></i>
+                                                </button>
                                                 <li><a href="#">services-2-1</a></li>
                                                 <li><a href="#">services-2-1</a></li>
                                                 <li><a href="#">services-2-1</a></li>
@@ -53,6 +68,7 @@
                                     </li>
                                     <li class="sub-hover-me"><a href="#">services-3</a><i class="fa fa-angle-right" aria-hidden="true"></i>
                                         <div class="sub-menu-2 px-3 py-2">
+
                                             <ul>
                                                 <li><a href="#">services-2-1</a></li>
                                                 <li><a href="#">services-2-1</a></li>
@@ -228,15 +244,39 @@
             </nav>
             <div class="mobile-nav-container py-5">
                 <div class="items-box">
-                    <ul class="p-0">
+                    <ul class="p-0 navbar-nav px-5">
                         <li class="pb-2 pt-4">
                             <a class="nav-link" aria-controls="nav-home" aria-selected="true" href="index.html">Home</a>
                         </li>
                         <li class="pb-2">
                             <a class="nav-link" href="about.html">About Us</a>
                         </li>
-                        <li class="pb-2">
-                            <a class="nav-link" aria-controls="nav-services" aria-selected="false" href="services.html">Services</a>
+                        <li class="nav-item pb-2">
+                            <a class="nav-link bropbtn font-size-14" href="#">Services <i
+                                    class="fa fa-caret-down"></i></a>
+                            <div class="sub-menu-1 px-3 py-2">
+                                <ul>
+                                    <li><a href="#">services-1</a></li>
+                                    <li class="sub-hover-me"><a href="#">services-2</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="sub-menu-2 px-3 py-2">
+                                            <ul>
+                                                <li><a href="#">services-2-1</a></li>
+                                                <li><a href="#">services-2-1</a></li>
+                                                <li><a href="#">services-2-1</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="sub-hover-me"><a href="#">services-3</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        <div class="sub-menu-2 px-3 py-2">
+                                            <ul>
+                                                <li><a href="#">services-2-1</a></li>
+                                                <li><a href="#">services-2-1</a></li>
+                                                <li><a href="#">services-2-1</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="pb-2">
                             <a class="nav-link" href="contact.html">Contact

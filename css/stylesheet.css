@@ -1336,12 +1336,33 @@ ul {
     display: none;
 }
 
+
+/* .sub-menu-2 {
+    background: #000;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+} */
+
 .sub-hover-me:hover .sub-menu-2 {
     position: absolute;
     display: block;
-    margin-top: -25px;
-    margin-left: 156px;
+    /* margin-top: -25px; */
+    /* margin-left: 156px; */
     background: rgba(0, 0, 0, .1);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .nav-item:hover .pro-menu-1 {
@@ -1544,7 +1565,6 @@ ul {
     }
     .mobile-nav-container .items-box .nav-link {
         font-size: 20px;
-        text-align: center;
         color: black;
         font-weight: 600;
     }
@@ -1553,5 +1573,8 @@ ul {
     }
     .mobile-nav-container .items-box .nav-link button {
         font-weight: 600;
+    }
+    .mobile-nav-container .back-btn i {
+        font-size: 40px;
     }
 }
