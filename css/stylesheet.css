@@ -53,9 +53,10 @@ ul.navbar-nav li.searchbar i {
     text-decoration: none;
 }
 
-.navbar-nav .nav-item:not(.searchbar) .nav-link {
+
+/* .navbar-nav .nav-item:not(.searchbar) .nav-link {
     border: solid 3px transparent;
-}
+} */
 
 .navbar-nav .nav-item:not(.searchbar) .nav-link:hover {
     border-bottom: solid 3px #fe4902;
@@ -1263,12 +1264,15 @@ h3 {
 
 .navbar-nav .nav-item:hover .sub-menu-1 {
     display: block;
-    position: absolute;
     background: rgba(0, 0, 0, .1);
-    margin-top: 0px;
-    margin-left: 5px;
-    left: 30px;
     border-radius: 6px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 
 .navbar-nav .nav-item {
@@ -1276,7 +1280,8 @@ h3 {
 }
 
 .sub-menu-1 a {
-    font-size: 14px;
+    font-size: 19px;
+    letter-spacing: 1px;
     color: #ffffff;
     text-decoration: none;
 }
@@ -1295,8 +1300,8 @@ ul {
 }
 
 .navbar-nav .nav-item:hover .sub-menu-1 ul li {
-    width: 150px;
-    padding: 10px;
+    width: 100%;
+    padding-bottom: 15px;
     border-bottom: 1px solid #ffffff;
     background: transparent;
     border-radius: 6px;
@@ -1567,6 +1572,7 @@ ul {
         font-size: 20px;
         color: black;
         font-weight: 600;
+        border-bottom: 1px solid black;
     }
     .items-box ul li {
         list-style-type: none;
@@ -1574,7 +1580,15 @@ ul {
     .mobile-nav-container .items-box .nav-link button {
         font-weight: 600;
     }
-    .mobile-nav-container .back-btn i {
-        font-size: 40px;
+    .mobile-nav-container .back-btn {
+        position: absolute;
+        font-size: 20px;
+        width: 50%;
+        background: none;
+        border: none;
+        text-align: left;
+    }
+    .fa-arrow-right {
+        float: right;
     }
 }

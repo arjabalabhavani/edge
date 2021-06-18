@@ -40,7 +40,8 @@ $(document).ready(function() {
         $('.mobile-nav-container').fadeToggle(1000);
     });
 
-    $("sub-hover-me").click(function() {
-        $('.mobile-nav-container').hide();
-    })
+    $('.back-btn').click(function() {
+        parent.history.back();
+
+    });
 });
