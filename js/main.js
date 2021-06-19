@@ -40,8 +40,14 @@ $(document).ready(function() {
         $('.mobile-nav-container').fadeToggle(1000);
     });
 
-    $('.back-btn').click(function() {
-        parent.history.back();
-
+    $('.back-btn-1').click(function() {
+        $('.sub-menu-1').fadeOut();
     });
+    $('.back-btn-2, .back-btn-3, .back-btn-4').click(function() {
+        $('.sub-menu-2').fadeOut();
+    });
+
+    $('.back-btn-5').click(function() {
+        $('.columnn-1').fadeOut();
+    })
 });
